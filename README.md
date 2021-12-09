@@ -47,7 +47,9 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 | speclibm  | 0.174671             | 3.493415  | 0.060972         | 0.000094                | 0.999944    |
 
 * Διάγραμμα για Χρόνο Εκτέλεσης
-![Figure_1](https://user-images.githubusercontent.com/73646657/145473704-9730b5f9-5500-4731-b42a-f36455ada4dd.png)
 
 * Διάγραμμα για CPI
 
+* Διάγραμμα για L1 Dcache Miss Rate
+* Διάγραμμα για L1 Icache Miss Rate
+* Διάγραμμα για L2 cache
