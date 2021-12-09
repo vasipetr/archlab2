@@ -25,7 +25,7 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 μνήμης.
 Πιο συγκεκριμένα:
 α)
-* sim_insts = 100.000.001 (ο αριθμός των εντολών που δεσμεύτηκαν από τη CPU)
+* sim_insts (ο αριθμός των εντολών που δεσμεύτηκαν από τη CPU)
 * Block replacements για την L1 Dcache
 * Αριθμός των access στην L2 cache
 
@@ -70,4 +70,6 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 
 ![Figure_5](https://user-images.githubusercontent.com/73646657/145490515-5ee8fd77-a2e0-45ed-bd7f-1fd49d07df9e.png)
 
-Από τα διαγράμματα φαίνεται ότι ο χρόνος εκτέλεσης, το CPI, το L1 Dcache και το L2 cache έχουν ανάλογες διαβαθμίσεις, ενώ το L1 Instruction cache είναι ανεξάρτητο. Το benchmark specsjeng έχει τον πιο αργό χρόνο εκτέλεσης και CPI που ξεπερνάει κατά πολύ τη μονάδα, ενώ το specmcf έχει το μεγαλύτερο miss rate στην L1 Icache. Αρκετά μεγάλο ρυθμό αστοχίας έχουν και τα specsjeng και speclibm στην L2 cache.
+Από τα διαγράμματα φαίνεται ότι ο χρόνος εκτέλεσης, το CPI, το L1 Dcache και το L2 cache έχουν ανάλογες διαβαθμίσεις, ενώ το L1 Instruction cache είναι ανεξάρτητο. Το benchmark specsjeng έχει τον πιο αργό χρόνο εκτέλεσης και CPI που ξεπερνάει κατά πολύ τη μονάδα, ενώ το specmcf έχει το μεγαλύτερο miss rate στην L1 Icache. Τέλος, τα benchmarks specsjeng και speclibm φαίνεται να έχουν σχεδόν 100% ρυθμό αστοχίας, όταν κάνουν access στην L2 cache.
+
+3)
