@@ -49,20 +49,25 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 * Διάγραμμα για Χρόνο Εκτέλεσης
 
 
+![Figure_1](https://user-images.githubusercontent.com/73646657/145490473-015f51f4-e5ff-4fe7-a023-615df8335582.png)
 
 * Διάγραμμα για CPI
 
 
+![Figure_2](https://user-images.githubusercontent.com/73646657/145490488-c27cca5f-65dd-4a5e-90da-1d09a6f5cc22.png)
 
 * Διάγραμμα για L1 Dcache Miss Rate
 
 
+![Figure_3](https://user-images.githubusercontent.com/73646657/145490493-a65b66ed-d31e-4159-b73e-3549183bf08a.png)
 
 * Διάγραμμα για L1 Icache Miss Rate
 
 
+![Figure_4](https://user-images.githubusercontent.com/73646657/145490502-5819cf5e-eba3-4fa2-bd4d-1ef64048c9cc.png)
 
 * Διάγραμμα για L2 cache
 
+![Figure_5](https://user-images.githubusercontent.com/73646657/145490515-5ee8fd77-a2e0-45ed-bd7f-1fd49d07df9e.png)
 
 Από τα διαγράμματα φαίνεται ότι ο χρόνος εκτέλεσης, το CPI, το L1 Dcache και το L2 cache έχουν ανάλογες διαβαθμίσεις, ενώ το L1 Instruction cache είναι ανεξάρτητο. Το benchmark specsjeng έχει τον πιο αργό χρόνο εκτέλεσης και CPI που ξεπερνάει κατά πολύ τη μονάδα, ενώ το specmcf έχει το μεγαλύτερο miss rate στην L1 Icache. Αρκετά μεγάλο ρυθμό αστοχίας έχουν και τα specsjeng και speclibm στην L2 cache.
