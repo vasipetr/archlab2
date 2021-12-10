@@ -78,8 +78,8 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 
 | Benchmark | 2GHz     | 1.5GHz |
 |:---------:|:--------:|:------:|
-| specbzip  | 0.083962 ||
-| specmcf   | 0.064955 ||
-| spechmmer | 0.059396 ||
-| specsjeng | 0.513528 ||
-| speclibm  | 0.174671 ||
+| specbzip  | 0.083962 |0.109754|
+| specmcf   | 0.064955 |0.086162|
+| spechmmer | 0.059396 |0.079149|
+| specsjeng | 0.513528 |0.581937|
+| speclibm  | 0.174671 |0.205034|
