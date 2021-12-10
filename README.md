@@ -21,13 +21,20 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 ./build/ARM/gem5.opt -d spec_results/speclibm configs/example/se.py --cpu-type=MinorCPU --caches --l2cache -c spec_cpu2006/470.lbm/src/speclibm -o "20 spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.of" -I 100000000
 ```
 1)
-Στο αρχείο spec_results έχουν αποθηκευτεί τα αποτελέσματα των παραπάνω εντολών. Ανατρέχοντας στα αρχεία που προέκυψαν (config.ini, config.json, stats.txt) μπορούμε να δούμε τις βασικές παραμέτρους για τον επεξεργαστή που εξομοιώνει ο gem5 όσον αφορά το υποσύστημα
-μνήμης.
+Στο αρχείο spec_results έχουν αποθηκευτεί τα αποτελέσματα των παραπάνω εντολών. Ανατρέχοντας στα αρχεία που προέκυψαν (config.ini, config.json, stats.txt) μπορούμε να δούμε τις βασικές παραμέτρους για τον επεξεργαστή που εξομοιώνει ο gem5 όσον αφορά το υποσύστημα μνήμης.
 Πιο συγκεκριμένα:
 α)
-* sim_insts (ο αριθμός των εντολών που δεσμεύτηκαν από τη CPU)
-* Block replacements για την L1 Dcache
-* Αριθμός των access στην L2 cache
+* system.cpu.committedInsts = ο αριθμός των εντολών που δεσμεύτηκαν από τη CPU
+* system.cpu.dcache.replacements = ο αριθμός των block replacements για την L1 Dcache
+* system.l2.overall_accesses::total = ο αριθμός των access στην L2 cache
+
+|Benchmark|Committed Instructions|L1 Dcache Block Replacements| L2 cache Accesses|
+|:-------:|:--------------------:|:--------------------------:|:----------------:|
+|specbzip |100.000.001           |710.569                     |712.341           |
+|specmcf  |100.000.001           |54.452                      |724.390           |
+|spechmmer|100.000.000           |65.718                      |70.563            |
+|specsjeng|100.000.000           |5.262.377                   |5.264.051         |
+|speclibm |100.000.000           |1.486.955                   |1.488.538         |
 
 
 2)
