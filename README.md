@@ -95,4 +95,8 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 Αν προσθέσουμε επεξεργαστή?????
 
 ### Βήμα 2
-
+Μέσα από το αρχείο config.ini βλέπουμε τις default τιμές των παραμέτρων που ζητούμαστε να ελέγξουμε και να αλλάξουμε για τη μέγιστη επίδοση:
+* L1 Dcache, L1 Icache, L2 cache Associativity: 2, 2, 8 αντίστοιχα
+* Block size: 64
+* Μέγεθος Cache Line: 64
+* L1 Dcache, L1 Icache, L2 cache Size Allocation: 65536, 32768, 2.097.152 αντίστοιχα
