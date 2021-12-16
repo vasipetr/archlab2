@@ -1,5 +1,7 @@
 # Αρχιτεκτονική Προηγμένων Υπολογιστών - Εργαστήριο 2
 ## Εργαστήριο Β - Ομάδα 6
+* Χατζηιορδάνου Ελισσάβετ 8269
+* Πετρίδη Βασιλική 8602
 
 ### Βήμα 1
 Διαδοχική εκτέλεση των benchmarks χρησιμοποιώντας τις παρακάτω εντολές:
@@ -126,3 +128,60 @@ Cost = a(L1isize + L1dsize) + β(L1iassoc + L1dassoc) + γ(L2size) + δ(L2assoc)
 ```
 Cost = 0.4(L1isize + L1dsize) + 0.3(L1iassoc + L1dassoc) + 0.15(L2size) + 0.1(L2assoc) + 0.05(cache line size)
 ```
+
+Παρακάτω παραθέτουμε τα κόστη των benchmarks με κάποια στοιχεία, τα οποία έχουμε κρίνει από το βήμα 2 ότι οδηγούν στο βέλτιστο CPI. Εφόσον, το νόμισμά μας δεν είναι πραγματικό έχει νόημα να χρησιμοποιηθεί ώστε να δούμε πόσο πιο ακριβό είναι το ένα μοντέλο σε σχέση με το άλλο όταν βάζουμε τα “ιδανικά” δεδομένα.
+
+* **Specbzip**
+    * Cache line size: 64
+    * L1d_size: 256 kB
+    * L1i_size: 64 kB
+    * L1d_assoc: 4
+    * L1i_assoc: 4
+    * L2_size: 2048 kB
+    * L2_aasoc: 8
+    * CPI: 1.615699
+    * Cost: 441.6
+
+* **Specmcf**
+    * Cache line size: 64
+    * L1d_size: 256 kB
+    * L1i_size: 64 kB
+    * L1d_assoc: 4
+    * L1i_assoc: 4
+    * L2_size: 2048 kB
+    * L2_aasoc: 8
+    * CPI: 1.154912
+    * Cost: 441.6
+* **Spechmmer**
+    * Cache line size: 128
+    * L1d_size: 128 kB
+    * L1i_size: 64 kB
+    * L1d_assoc: 2
+    * L1i_assoc: 2
+    * L2_size: 2048 kB
+    * L2_aasoc: 8
+    * CPI: 1.179978
+    * Cost: 392.4
+* **Specsjeng**
+    * Cache line size: 128
+    * L1d_size: 64 kB
+    * L1i_size: 256 kB
+    * L1d_assoc: 2
+    * L1i_assoc: 2
+    * L2_size: 4096 kB
+    * L2_aasoc: 8
+    * CPI: 6.795293
+    * Cost: 699.6
+* **Speclibm**
+    * Cache line size: 128
+    * L1d_size: 128 kB
+    * L1i_size: 128 kB
+    * L1d_assoc: 2
+    * L1i_assoc: 2
+    * L2_size: 4096 kB
+    * L2_aasoc: 8
+    * CPI: 2.576597
+    * Cost: 725.2
+
+Όπως ήταν αναμενόμενο, τα 3 πρώτα benchmark χρειάζονται το χαμηλότερο κόστος για να πετύχουμε το καλύτερο CPI (κοντά στην μονάδα). Τα δύο τελευταία benchmark έχουν σχεδόν το διπλάσιο κόστος για να πετύχουμε μείωση του CPI . Αν και απαιτεί σημαντική βελτίωση από την αρχική τιμή τους, παραμένει (ειδικά για το sjeng) μακρυά από την μονάδα.
+
