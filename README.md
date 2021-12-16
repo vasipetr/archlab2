@@ -30,6 +30,8 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 * system.cpu.dcache.replacements = ο αριθμός των block replacements για την L1 Dcache
 * system.l2.overall_accesses::total = ο αριθμός των access στην L2 cache
 
+O αριθμός των προσβάσεων στην L2 cache μπορεί να υπολογιστεί και από το σύνολο των αστοχιών στην L1 Dcache και L1 Icache.
+
 |Benchmark|Committed Instructions|Committed Ops|L1 Dcache Block Replacements| L2 cache Accesses|
 |:-------:|:--------------------:|:-----------:|:--------------------------:|:----------------:|
 |specbzip |100.000.001           |100.196.363  |710.569                     |712.341           |
