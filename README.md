@@ -23,18 +23,20 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 1)
 Στο αρχείο spec_results έχουν αποθηκευτεί τα αποτελέσματα των παραπάνω εντολών. Ανατρέχοντας στα αρχεία που προέκυψαν (config.ini, config.json, stats.txt) μπορούμε να δούμε τις βασικές παραμέτρους για τον επεξεργαστή που εξομοιώνει ο gem5 όσον αφορά το υποσύστημα μνήμης.
 Πιο συγκεκριμένα:
+
 α)
 * system.cpu.committedInsts = ο αριθμός των εντολών που δεσμεύτηκαν από τη CPU
+* system.cpu.committedOps = ο αριθμός των micro-operations 
 * system.cpu.dcache.replacements = ο αριθμός των block replacements για την L1 Dcache
 * system.l2.overall_accesses::total = ο αριθμός των access στην L2 cache
 
-|Benchmark|Committed Instructions|L1 Dcache Block Replacements| L2 cache Accesses|
-|:-------:|:--------------------:|:--------------------------:|:----------------:|
-|specbzip |100.000.001           |710.569                     |712.341           |
-|specmcf  |100.000.001           |54.452                      |724.390           |
-|spechmmer|100.000.000           |65.718                      |70.563            |
-|specsjeng|100.000.000           |5.262.377                   |5.264.051         |
-|speclibm |100.000.000           |1.486.955                   |1.488.538         |
+|Benchmark|Committed Instructions|Committed Ops|L1 Dcache Block Replacements| L2 cache Accesses|
+|:-------:|:--------------------:|:-----------:|:--------------------------:|:----------------:|
+|specbzip |100.000.001           |100.196.363  |710.569                     |712.341           |
+|specmcf  |100.000.001           |109.431.937  |54.452                      |724.390           |
+|spechmmer|100.000.000           |101.102.729  |65.718                      |70.563            |
+|specsjeng|100.000.000           |184.174.857  |5.262.377                   |5.264.051         |
+|speclibm |100.000.000           |100.003.637  |1.486.955                   |1.488.538         |
 
 
 2)
