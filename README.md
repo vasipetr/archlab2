@@ -74,7 +74,7 @@ O αριθμός των προσβάσεων στην L2 cache μπορεί να
 
 
 ![Figure_3](https://user-images.githubusercontent.com/73646657/145490493-a65b66ed-d31e-4159-b73e-3549183bf08a.png)
-κριν
+
 * Διάγραμμα για L1 Icache Miss Rate
 
 
