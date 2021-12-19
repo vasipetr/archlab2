@@ -63,26 +63,31 @@ O αριθμός των προσβάσεων στην L2 cache μπορεί να
 * Διάγραμμα για Χρόνο Εκτέλεσης
 
 
-![Figure_1](https://user-images.githubusercontent.com/73646657/145490473-015f51f4-e5ff-4fe7-a023-615df8335582.png)
+
+![execution time](https://user-images.githubusercontent.com/73646657/146672641-bd1770da-1ab1-43cb-8c86-422d6d3be01a.png)
 
 * Διάγραμμα για CPI
 
 
-![Figure_2](https://user-images.githubusercontent.com/73646657/145490488-c27cca5f-65dd-4a5e-90da-1d09a6f5cc22.png)
+![cpi](https://user-images.githubusercontent.com/73646657/146672643-0b0abf1c-133d-40fa-a9b1-1bc9f9f95444.png)
+
 
 * Διάγραμμα για L1 Dcache Miss Rate
 
 
-![Figure_3](https://user-images.githubusercontent.com/73646657/145490493-a65b66ed-d31e-4159-b73e-3549183bf08a.png)
+![l1d](https://user-images.githubusercontent.com/73646657/146672646-e3d75e17-af97-44a9-a222-44b0aa546180.png)
+
 
 * Διάγραμμα για L1 Icache Miss Rate
 
 
-![Figure_4](https://user-images.githubusercontent.com/73646657/145490502-5819cf5e-eba3-4fa2-bd4d-1ef64048c9cc.png)
+![l1i](https://user-images.githubusercontent.com/73646657/146672647-63ad1532-03e6-4a50-8536-5187133d6265.png)
+
 
 * Διάγραμμα για L2 cache
 
-![Figure_5](https://user-images.githubusercontent.com/73646657/145490515-5ee8fd77-a2e0-45ed-bd7f-1fd49d07df9e.png)
+![l2](https://user-images.githubusercontent.com/73646657/146672653-42e90d76-be39-40be-8dd4-6443c0669da4.png)
+
 
 Από τα διαγράμματα φαίνεται ότι ο χρόνος εκτέλεσης, το CPI, το L1 Dcache και το L2 cache έχουν ανάλογες διαβαθμίσεις, ενώ το L1 Instruction cache είναι ανεξάρτητο. Το benchmark specsjeng έχει τον πιο αργό χρόνο εκτέλεσης και CPI που ξεπερνάει κατά πολύ τη μονάδα, ενώ το specmcf έχει το μεγαλύτερο miss rate στην L1 Icache. Τέλος, τα benchmarks specsjeng και speclibm φαίνεται να έχουν σχεδόν 100% ρυθμό αστοχίας, όταν κάνουν access στην L2 cache.
 
