@@ -33,7 +33,7 @@ spec_cpu2006/456.hmmer/data/bombesin.hmm" -I 100000000
 * system.cpu.dcache.replacements = ο αριθμός των block replacements για την L1 Dcache
 * system.l2.overall_accesses::total = ο αριθμός των access στην L2 cache
 
-O αριθμός των προσβάσεων στην L2 cache μπορεί να υπολογιστεί και από το σύνολο των αστοχιών στην L1 Dcache και L1 Icache. Παρατηρούμε διαφορά στον αριθμό των Committed Instructions σε σχέση με τον αριθμό των Committed Operations, πιό συγκεκριμένα τα Commited ops είναι περισσότερα. Αυτό συμβαίνει γιατί ενώ έχουμε ορίσει το όριο των Committed Instructions που πρόκειται να γίνουν, κάποιες από αυτές χρειάζεται να διασπασθούν σε microoperations . 
+O αριθμός των προσβάσεων στην L2 cache μπορεί να υπολογιστεί και από το σύνολο των αστοχιών στην L1 Dcache και L1 Icache. Παρατηρούμε διαφορά στον αριθμό των Committed Instructions σε σχέση με τον αριθμό των Committed Operations, πιο συγκεκριμένα τα Commited Οps είναι περισσότερα. Αυτό συμβαίνει γιατί ενώ έχουμε ορίσει το όριο των Committed Instructions που πρόκειται να γίνουν, κάποιες από αυτές χρειάζεται να διασπασθούν σε micro-operations . 
 
 |Benchmark|Committed Instructions|Committed Ops|L1 Dcache Block Replacements| L2 cache Accesses|
 |:-------:|:--------------------:|:-----------:|:--------------------------:|:----------------:|
